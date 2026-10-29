@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Checkout | Dead Bean Coffee Co</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600&family=Archivo+Black&display=swap" rel="stylesheet">
+  <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+  <div class="promo"><a href="#">Start a coffee subscription and get a free welcome kit ($50 value) &rarr;</a></div>
+  <header class="site-header sticky-top">
+    <nav class="navbar" aria-label="Main">
+      <div class="container-fluid px-3 px-lg-5">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+                aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand logo" href="index.html"><img src="images/logo.svg" alt="Dead Bean Coffee Co"></a>
+        <div class="nav-icons">
+          <a href="#" aria-label="Account">&#128100;</a>
+          <a href="#" aria-label="Search">&#128269;</a>
+          <div class="cart-wrap">
+            <a href="checkout.html" class="cart-link" aria-label="Cart">&#128722;</a>
+          </div>
+        </div>
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav nav-main w-100">
+            <li class="nav-item"><a class="nav-link" href="index.html">Coffee</a></li>
+            <!-- TASK 1 START: mega-menu item -->
+            <li class="nav-item mega">
+              <a class="nav-link" href="#">Shop by Category</a>
+
+              <!-- from BP and wider: panel with K = 4 columns -->
+              <div class="mega-panel">
+                <div class="mega-columns">
+              <div class="mega-col">
+                <h3>Roasts</h3>
+                <ul>
+                  <li><a href="#">Light roast</a></li>
+                  <li><a href="#">Medium roast</a></li>
+                  <li><a href="#">Dark roast</a></li>
+                  <li><a href="#">Espresso roast</a></li>
+                  <li><a href="#">Decaf</a></li>
+                </ul>
+              </div>
+              <div class="mega-col">
+                <h3>Flavors</h3>
+                <ul>
+                  <li><a href="#">Pumpkin chai</a></li>
+                  <li><a href="#">Pistachio</a></li>
+                  <li><a href="#">Maple cinnamon</a></li>
+                  <li><a href="#">Chocolate rum</a></li>
+                  <li><a href="#">Vanilla</a></li>
+                </ul>
+              </div>
+              <div class="mega-col">
+                <h3>Brew methods</h3>
+                <ul>
+                  <li><a href="#">Drip</a></li>
+                  <li><a href="#">French press</a></li>
+                  <li><a href="#">Pour over</a></li>
+                  <li><a href="#">Cold brew</a></li>
+                  <li><a href="#">Espresso</a></li>
+                </ul>
+              </div>
+              <div class="mega-col">
+                <h3>Gear and merch</h3>
+                <ul>
+                  <li><a href="#">Mugs</a></li>
+                  <li><a href="#">Tumblers</a></li>
+                  <li><a href="#">Apparel</a></li>
+                  <li><a href="#">Filters</a></li>
+                  <li><a href="#">Gift cards</a></li>
+                </ul>
+              </div>
+                </div>
+              </div>
+
+              <!-- below BP: the same 4 groups as an accordion -->
+              <div class="mega-accordion">
+              <details>
+                <summary>Roasts</summary>
+                <ul>
+                  <li><a href="#">Light roast</a></li>
+                  <li><a href="#">Medium roast</a></li>
+                  <li><a href="#">Dark roast</a></li>
+                  <li><a href="#">Espresso roast</a></li>
+                  <li><a href="#">Decaf</a></li>
+                </ul>
+              </details>
+              <details>
+                <summary>Flavors</summary>
+                <ul>
+                  <li><a href="#">Pumpkin chai</a></li>
+                  <li><a href="#">Pistachio</a></li>
+                  <li><a href="#">Maple cinnamon</a></li>
+                  <li><a href="#">Chocolate rum</a></li>
+                  <li><a href="#">Vanilla</a></li>
+                </ul>
+              </details>
+              <details>
+                <summary>Brew methods</summary>
+                <ul>
+                  <li><a href="#">Drip</a></li>
+                  <li><a href="#">French press</a></li>
+                  <li><a href="#">Pour over</a></li>
+                  <li><a href="#">Cold brew</a></li>
+                  <li><a href="#">Espresso</a></li>
+                </ul>
+              </details>
+              <details>
+                <summary>Gear and merch</summary>
+                <ul>
+                  <li><a href="#">Mugs</a></li>
+                  <li><a href="#">Tumblers</a></li>
+                  <li><a href="#">Apparel</a></li>
+                  <li><a href="#">Filters</a></li>
+                  <li><a href="#">Gift cards</a></li>
+                </ul>
+              </details>
+              </div>
+            </li>
+            <!-- TASK 1 END -->
+            <li class="nav-item"><a class="nav-link" href="#">Subscribe &amp; Save</a></li>
+            <li class="logo-gap d-none d-xl-block" aria-hidden="true"></li>
+            <li class="nav-item"><a class="nav-link" href="#">Merch</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Find in Store</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container-fluid checkout">
+    <h1 class="detail-name">Checkout</h1>
+
+    <!-- TASK 2 START: HTML5 validation only, no JavaScript -->
+    <form class="checkout-form" action="#" method="get">
+      <fieldset>
+        <legend>Contact</legend>
+        <div class="fields">
+        <label for="fullname">Full name</label>
+        <input type="text" id="fullname" name="fullname" class="form-control" required minlength="3" autocomplete="name">
+        <span class="error">Please enter your full name.</span>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" class="form-control" required autocomplete="email">
+        <span class="error">Enter a valid email address.</span>
+        <label for="phone">Phone</label>
+        <input type="tel" id="phone" name="phone" class="form-control" placeholder="0300-1234567" required pattern="03[0-9]{2}-[0-9]{7}" title="Format: 03XX-XXXXXXX" autocomplete="tel">
+        <span class="error">Use the format 03XX-XXXXXXX.</span>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Delivery</legend>
+        <div class="fields">
+        <label for="address">Address</label>
+        <input type="text" id="address" name="address" class="form-control" required minlength="5" autocomplete="address-line1">
+        <span class="error">Please enter your address.</span>
+        <label for="city">City</label>
+        <select id="city" name="city" class="form-select" required>
+          <option value="">Choose a city</option>
+          <option>Lahore</option>
+          <option>Karachi</option>
+          <option>Islamabad</option>
+          <option>Rawalpindi</option>
+          <option>Faisalabad</option>
+          <option>Multan</option>
+        </select>
+        <span class="error">Please choose a city.</span>
+        <label for="delivery">Delivery date</label>
+        <input type="date" id="delivery" name="delivery" class="form-control" required min="2026-10-29" max="2026-11-29">
+        <span class="error">Choose a date from 29 Oct to 29 Nov 2026.</span>
+        </div>
+      </fieldset>
+
+      <div class="submit-row">
+        <button type="submit" class="btn btn-dw btn-lg w-100">Place order</button>
+      </div>
+    </form>
+    <!-- TASK 2 END -->
+  </main>
+
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row gy-4 justify-content-center">
+        <div class="col-12 col-md-3 text-center text-md-start">
+          <img src="images/logo.svg" alt="Dead Bean Coffee Co" class="footer-logo">
+        </div>
+        <div class="col-6 col-md-3 col-lg-2">
+          <h2 class="footer-title">Company</h2>
+          <ul class="list-unstyled">
+            <li><a href="#">Help + FAQ</a></li><li><a href="#">Refund Policy</a></li>
+            <li><a href="#">Careers</a></li><li><a href="#">Wholesale</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md-3 col-lg-2">
+          <h2 class="footer-title">Accounts + Orders</h2>
+          <ul class="list-unstyled">
+            <li><a href="#">Your Account</a></li><li><a href="#">Shipping + Delivery</a></li>
+            <li><a href="#">Subscription</a></li><li><a href="#">Track Your Order</a></li>
+          </ul>
+        </div>
+        <div class="col-12 col-md-3 col-lg-2">
+          <h2 class="footer-title">Legal</h2>
+          <ul class="list-unstyled">
+            <li><a href="#">Terms + Conditions</a></li><li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="copyright">&copy; 2026, Dead Bean Coffee Co. Student project, not a real store.</p>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

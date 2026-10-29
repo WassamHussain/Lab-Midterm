@@ -1,0 +1,486 @@
+:root {
+  --red: #e02626;
+  --red-dark: #b81d1d;
+  --grey: #2a2a2a;
+}
+
+body {
+  font-family: "Archivo", system-ui, sans-serif;
+  background: #000;
+  color: #fff;
+}
+h1,
+h2,
+h3,
+.btn,
+.nav-link,
+.footer-title,
+.promo {
+  font-family: "Archivo Black", "Archivo", sans-serif;
+  text-transform: uppercase;
+}
+a {
+  color: inherit;
+}
+
+/* Promo bar */
+.promo {
+  background: var(--red);
+  text-align: center;
+  padding: 0.9rem 1rem;
+  font-size: 0.9rem;
+  letter-spacing: 0.04em;
+}
+.promo a {
+  text-decoration: none;
+}
+
+/* Header */
+.site-header {
+  background: #000;
+  z-index: 1030;
+}
+.navbar {
+  padding: 1rem 0;
+}
+.navbar-toggler {
+  border-color: #fff;
+  filter: invert(1);
+}
+.logo img {
+  width: 80px;
+  height: 80px;
+  display: block;
+}
+.nav-icons {
+  display: flex;
+  gap: 1rem;
+  font-size: 1.25rem;
+}
+.nav-icons a {
+  text-decoration: none;
+}
+.nav-main .nav-link {
+  color: #fff;
+  font-size: 1.1rem;
+}
+.nav-main .nav-link:hover {
+  color: var(--red);
+}
+
+/* Buttons */
+.btn-dw {
+  background: var(--red);
+  border-radius: 0;
+  color: #fff;
+  padding: 0.8rem 1.4rem;
+  border: 0;
+}
+.btn-dw:hover,
+.btn-dw:focus-visible {
+  background: var(--red-dark);
+  color: #fff;
+}
+.btn-outline-light {
+  border-radius: 0;
+  font-size: 0.9rem;
+}
+.btn:focus-visible,
+a:focus-visible,
+.form-control:focus {
+  outline: 3px solid #fff;
+  outline-offset: 2px;
+  box-shadow: none;
+}
+
+/* Hero */
+.hero {
+  background: linear-gradient(135deg, var(--grey), #121212);
+  padding: 4rem 0;
+}
+.hero h1 {
+  font-size: clamp(2.25rem, 6vw, 4.5rem);
+  line-height: 1.05;
+  max-width: 14ch;
+}
+.hero-text {
+  font-size: 1.2rem;
+  max-width: 36ch;
+  margin: 1.25rem 0 1.5rem;
+}
+.hero-img {
+  width: 100%;
+  max-width: 380px;
+}
+
+/* Products */
+.products {
+  padding: 4rem 0;
+}
+.section-title {
+  text-align: center;
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  margin-bottom: 2.5rem;
+}
+.product-card {
+  display: flex;
+  flex-direction: column;
+}
+.product-card .btn {
+  margin-top: auto;
+}
+.product-img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+.product-name {
+  font-size: 1rem;
+  margin-bottom: 0.4rem;
+}
+.product-name a {
+  text-decoration: none;
+}
+.product-name a:hover {
+  color: var(--red);
+}
+.product-price {
+  margin-bottom: 0.2rem;
+}
+.product-rating {
+  margin-bottom: 0.9rem;
+}
+.product-rating span {
+  letter-spacing: 1px;
+}
+
+/* Product detail */
+.detail {
+  padding: 2rem 0 4rem;
+}
+.breadcrumb {
+  --bs-breadcrumb-divider-color: #aaa;
+}
+.breadcrumb a {
+  color: #ccc;
+}
+.breadcrumb-item.active {
+  color: #fff;
+}
+.detail-img {
+  width: 100%;
+}
+.detail-name {
+  font-size: clamp(1.75rem, 4vw, 2.75rem);
+}
+.detail-price {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+.detail-desc {
+  max-width: 52ch;
+  margin-bottom: 1.5rem;
+}
+.qty-input {
+  width: 5.5rem;
+  border-radius: 0;
+}
+
+/* Newsletter + footer */
+.signup {
+  background: var(--red);
+  padding: 3rem 0;
+}
+.signup-text {
+  font-family: "Archivo Black", sans-serif;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+.signup-form {
+  max-width: 560px;
+  margin: 0 auto;
+}
+.signup-form .form-control,
+.signup-form .btn {
+  border-radius: 0;
+  padding: 0.9rem 1rem;
+}
+.signup-form .btn {
+  font-family: "Archivo Black", sans-serif;
+  text-transform: uppercase;
+}
+.site-footer {
+  padding: 3.5rem 0 2rem;
+}
+.footer-logo {
+  width: 140px;
+}
+.footer-title {
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+.site-footer li {
+  margin-bottom: 0.5rem;
+}
+.site-footer a {
+  text-decoration: none;
+}
+.site-footer a:hover {
+  color: var(--red);
+  text-decoration: underline;
+}
+.copyright {
+  font-size: 0.85rem;
+  margin: 2rem 0 0;
+  text-align: center;
+}
+
+@media (max-width: 575.98px) {
+  .hero {
+    padding: 2.5rem 0;
+  }
+  .products {
+    padding: 2.5rem 0;
+  }
+}
+
+/* ===== TASK 1: navbar breakpoint and mega-menu =====
+   BP = 600 + 31 = 631px, K = 4 columns, accent hue H = 217 */
+:root {
+  --accent: hsl(217, 70%, 45%);
+}
+
+/* Below BP the desktop panel does not exist; from BP up it opens on hover or focus (see below) */
+.mega-panel {
+  display: none;
+}
+
+/* Below BP: accordion made with <details> inside the hamburger menu */
+.mega-accordion details {
+  border-bottom: 1px solid #333;
+}
+.mega-accordion summary {
+  cursor: pointer;
+  padding: 0.6rem 1rem;
+  font-family: "Archivo Black", "Archivo", sans-serif;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+.mega-accordion ul {
+  list-style: none;
+  margin: 0;
+  padding: 0 0 0.5rem 2rem;
+}
+.mega-accordion a {
+  display: block;
+  padding: 0.25rem 0;
+  color: #ccc;
+  text-decoration: none;
+}
+.mega-accordion a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+/* From BP and wider: links always visible (no hamburger) and the mega panel works */
+@media (min-width: 631px) {
+  .navbar-toggler {
+    display: none;
+  }
+  .navbar-collapse {
+    display: block !important; /* beats Bootstrap's .collapse:not(.show) */
+    flex-basis: 100%;
+    order: 3; /* links sit on their own row under the logo and icons */
+  }
+  .nav-main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .nav-main .nav-link {
+    font-size: 0.85rem;
+    padding: 0.9rem 0.7rem;
+  }
+
+  .mega-accordion {
+    display: none;
+  }
+  .mega-panel {
+    display: block;
+    visibility: hidden; /* hidden, not display:none, so it can fade and close with a short delay */
+    opacity: 0;
+    transition: opacity 0.15s, visibility 0s linear 0.3s; /* 0.3s delay on closing */
+    position: absolute; /* does not push the page down; anchored to .navbar (position: relative) */
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 20; /* inside the sticky header (z-index 1030), so above grid, cards and hero */
+    background: #111;
+    border-top: 4px solid var(--accent);
+    padding: 2rem 3rem;
+  }
+  /* invisible bridge: keeps the panel open while the pointer crosses the gap */
+  .mega-panel::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 100%;
+    height: 1.5rem;
+  }
+  .mega:hover .mega-panel,
+  .mega:focus-within .mega-panel {
+    visibility: visible;
+    opacity: 1;
+    transition-delay: 0s; /* open immediately */
+  }
+  .mega-columns {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* K = 4 */
+    gap: 2rem;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  .mega-col h3 {
+    font-size: 0.95rem;
+    padding-bottom: 0.5rem;
+    margin-bottom: 0.75rem;
+    border-bottom: 2px solid var(--accent);
+  }
+  .mega-col ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .mega-col li {
+    margin-bottom: 0.4rem;
+  }
+  .mega-col a {
+    color: #ddd;
+    text-decoration: none;
+  }
+  .mega-col a:hover {
+    color: #fff;
+    text-decoration: underline;
+  }
+}
+
+/* From 1200px: big centred logo overlapping the hero, as in Assignment 2 */
+@media (min-width: 1200px) {
+  .logo {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    z-index: 2;
+    margin: 0;
+  }
+  .logo img {
+    width: 170px;
+    height: 170px;
+  }
+  .navbar {
+    min-height: 130px;
+  }
+  .navbar-collapse {
+    flex-basis: auto;
+    flex-grow: 1;
+    order: 1;
+  }
+  .nav-icons {
+    order: 2;
+    margin-left: 1.5rem;
+  }
+  .nav-main {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+  .nav-main .nav-link {
+    font-size: 0.8rem;
+    padding: 2.2rem 0.5rem;
+  }
+  .logo-gap {
+    width: 200px;
+  }
+}
+
+/* ===== TASK 2: checkout form (validation shown only after the user interacts) ===== */
+.checkout {
+  max-width: 1140px; /* container-fluid keeps the form wide enough at exactly BP */
+  padding: 2rem 0.75rem 4rem;
+}
+.checkout-form {
+  display: grid;
+  grid-template-columns: 1fr; /* below BP: one column */
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+.checkout-form fieldset {
+  min-width: 0;
+  margin: 0;
+  padding: 1rem 0.9rem 1.25rem;
+  border: 1px solid #444;
+}
+.checkout-form legend {
+  float: none;
+  width: auto;
+  padding: 0 0.5rem;
+  font-family: "Archivo Black", "Archivo", sans-serif;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+}
+.fields {
+  display: grid;
+  grid-template-columns: 1fr; /* below BP: label above input */
+  gap: 0.35rem;
+}
+.fields > * {
+  min-width: 0; /* lets inputs shrink instead of overflowing the fieldset */
+}
+.fields label {
+  margin-top: 0.6rem;
+}
+.fields .form-control,
+.fields .form-select {
+  border-radius: 0;
+}
+.fields .error {
+  display: none; /* hidden until the field is invalid AND touched */
+  color: #ff5c5c;
+  font-size: 0.85rem;
+}
+.fields .form-control:user-invalid,
+.fields .form-select:user-invalid {
+  border: 2px solid #ff3b3b;
+}
+.fields .form-control:user-invalid + .error,
+.fields .form-select:user-invalid + .error {
+  display: block;
+}
+
+/* From BP and wider: fieldsets side by side, labels in a left column */
+@media (min-width: 631px) {
+  .checkout-form {
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+  }
+  .submit-row {
+    grid-column: 1 / -1; /* button spans both columns */
+  }
+  .fields {
+    grid-template-columns: 5.5rem 1fr;
+    align-items: center;
+    gap: 0.9rem 0.75rem;
+  }
+  .fields label {
+    margin-top: 0;
+  }
+  .fields .error {
+    grid-column: 2;
+    margin-top: -0.5rem;
+  }
+}
+
