@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pumpkin Chai Coffee | Dead Bean Coffee Co</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600&family=Archivo+Black&display=swap" rel="stylesheet">
+  <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+  <div class="promo"><a href="#">Start a coffee subscription and get a free welcome kit ($50 value) &rarr;</a></div>
+  <header class="site-header sticky-top">
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid px-3 px-lg-5">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+                aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand logo" href="index.html"><img src="images/logo.svg" alt="Dead Bean Coffee Co"></a>
+        <div class="nav-icons order-lg-2">
+          <a href="#" aria-label="Account">&#128100;</a>
+          <a href="#" aria-label="Search">&#128269;</a>
+          <a href="#" aria-label="Cart, 0 items">&#128722;</a>
+        </div>
+        <div class="collapse navbar-collapse order-lg-1" id="mainNav">
+          <ul class="navbar-nav nav-main w-100">
+            <li class="nav-item"><a class="nav-link" href="index.html">Coffee</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Subscribe &amp; Save</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Merch</a></li>
+            <li class="logo-gap d-none d-lg-block" aria-hidden="true"></li>
+            <li class="nav-item"><a class="nav-link" href="#">Find in Store</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container detail">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="index.html">Coffee</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Pumpkin Chai Coffee</li>
+      </ol>
+    </nav>
+    <div class="row g-4 g-lg-5">
+      <div class="col-12 col-md-6">
+        <img src="images/pumpkin.svg" alt="Pumpkin Chai Coffee" class="detail-img">
+      </div>
+      <div class="col-12 col-md-6">
+        <h1 class="detail-name">Pumpkin Chai Coffee</h1>
+        <p class="detail-price">$13.99</p>
+        <p class="product-rating"><span aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span> 4.7 (2546)</p>
+        <p class="detail-desc">Bold dark roast with warm pumpkin and chai spice. Whole bean, 10 oz bag, roasted to order.</p>
+        <div class="d-flex flex-wrap gap-3 align-items-end">
+          <div>
+            <label for="qty" class="form-label">Quantity</label>
+            <input type="number" id="qty" class="form-control qty-input" value="1" min="1" max="10">
+          </div>
+          <button type="button" class="btn btn-dw btn-lg flex-grow-1 flex-sm-grow-0">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <section class="signup">
+    <div class="container text-center">
+      <p class="signup-text">Stay bold, stay caffeinated. Sign up and save 20% off your first order</p>
+      <div class="input-group signup-form">
+        <input type="email" class="form-control" placeholder="Enter Your Email Address" aria-label="Email address">
+        <button class="btn btn-dark" type="button">Sign me up</button>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row gy-4 justify-content-center">
+        <div class="col-12 col-md-3 text-center text-md-start">
+          <img src="images/logo.svg" alt="Dead Bean Coffee Co" class="footer-logo">
+        </div>
+        <div class="col-6 col-md-3 col-lg-2">
+          <h2 class="footer-title">Company</h2>
+          <ul class="list-unstyled">
+            <li><a href="#">Help + FAQ</a></li><li><a href="#">Refund Policy</a></li>
+            <li><a href="#">Careers</a></li><li><a href="#">Wholesale</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md-3 col-lg-2">
+          <h2 class="footer-title">Accounts + Orders</h2>
+          <ul class="list-unstyled">
+            <li><a href="#">Your Account</a></li><li><a href="#">Shipping + Delivery</a></li>
+            <li><a href="#">Subscription</a></li><li><a href="#">Track Your Order</a></li>
+          </ul>
+        </div>
+        <div class="col-12 col-md-3 col-lg-2">
+          <h2 class="footer-title">Legal</h2>
+          <ul class="list-unstyled">
+            <li><a href="#">Terms + Conditions</a></li><li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="copyright">&copy; 2026, Dead Bean Coffee Co. Student project, not a real store.</p>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
